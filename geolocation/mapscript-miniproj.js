@@ -72,6 +72,7 @@ function successCallback(position) {
         L.marker([lat, lng])
         .addTo(map)
         .bindPopup(msg)
+        .openPopup()
 
         L.circle([lat, lng], {
         radius: accuracy,      
