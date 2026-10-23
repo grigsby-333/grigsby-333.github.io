@@ -1,0 +1,42 @@
+html, body {margin: 0; height: 100%}
+
+#map {height: 100%; width: 100%}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.layer-info-box {
+    padding:6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    max-width: 280px;
+    border: 1px solid #ccc;
+}
+.layer-info-box h4 {
+    margin: 0 0 6px 0;
+    color: #2c3e50;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+}
+.layer-info-box p {
+    margin: 0;
+    color: #555;
+}
+
+.zoom-warning-box {
+    padding: 6px 8px;
+    font: 12px/14px Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow-y: auto;
+}
