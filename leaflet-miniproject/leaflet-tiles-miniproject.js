@@ -5,7 +5,7 @@ map.setView([40, -96], 5);
 const streets = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 19, 
     attribution: 'Tiles &copy; Esri'
-});  
+}).addTo(map);  
 
 const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 19, 
@@ -15,7 +15,7 @@ const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/servi
 const topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
     maxZoom: 17, 
     attribution: 'Map data: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-}).addTo(map);
+});
 
 const dark = L.tileLayer('https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}', {
     subdomains: 'abcd',
